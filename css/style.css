@@ -1,0 +1,105 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #45338f59;
+}
+
+.titulo__galeria {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.contenedor__grid {
+    width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "producto1 producto2  producto3"
+        "producto4 producto5  producto6"
+        "producto7 producto8  producto9";
+    height: 100vh;
+    gap: 20px;
+}
+.producto__imagen {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.producto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #342828;
+    background-color: antiquewhite;
+}
+.producto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #342828;
+    background-color: antiquewhite;
+}
+.producto3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+.producto4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+.producto5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+.producto6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+.producto7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+.producto8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+.producto9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: #342828;
+}
+
+.producto__info {
+    padding: 10px;
+    text-align: center;
+}
+
+
