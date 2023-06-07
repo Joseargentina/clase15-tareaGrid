@@ -18,12 +18,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-        "producto1 producto2  producto3"
-        "producto4 producto5  producto6"
-        "producto7 producto8  producto9";
     height: 100vh;
     gap: 20px;
+    margin: 0 10px;
 }
 .producto__imagen {
     width: 100%;
@@ -31,73 +28,32 @@ body {
     display: block;
     object-fit: cover;
 }
-.producto1 {
+.producto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: #342828;
     background-color: antiquewhite;
+    margin: 0 auto;
+    
 }
-.producto2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #342828;
-    background-color: antiquewhite;
+.producto:nth-child(1) {
+    grid-column: 1/4;
 }
-.producto3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
-}
-.producto4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
-}
-.producto5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
-}
-.producto6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
-}
-.producto7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
-}
-.producto8 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
-}
-.producto9 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    color: #342828;
+
+.producto:nth-child(8) {
+    grid-column: 1/3;
+    padding-bottom: 15px;
 }
 
 .producto__info {
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-
+.producto__titulo {
+    padding: 10px 0;
+}
